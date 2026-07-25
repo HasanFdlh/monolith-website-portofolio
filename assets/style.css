@@ -202,7 +202,8 @@ h2 {
   transition: 0.25s ease;
 }
 .stack-item img[src*="midtrans"],
-.stack-item img[src*="briapi"] {
+.stack-item img[src*="briapi"] 
+.stack-item img[src*="komodo"] {
   width: 82px;
   height: 82px;
 }
