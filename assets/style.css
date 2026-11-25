@@ -265,18 +265,31 @@ section h2,
 }
 
 .hero-label {
-  margin: 0 0 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 15px;
   color: var(--accent-dark);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.13em;
+  line-height: 1.5;
+}
+
+.hero-label::before {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #14967f;
+  box-shadow: 0 0 0 4px rgba(20, 150, 127, 0.12);
+  content: "";
 }
 
 .hero h1 {
   margin: 0;
   color: var(--ink);
-  font: 800 clamp(48px, 6vw, 74px)/1.06 var(--font-display);
-  letter-spacing: -0.07em;
+  font: 800 clamp(48px, 5.8vw, 72px)/1.03 var(--font-display);
+  letter-spacing: -0.065em;
 }
 
 .hero h1 > span {
@@ -285,32 +298,32 @@ section h2,
 
 .hero-intro {
   max-width: 570px;
-  margin: 23px 0 0;
+  margin: 20px 0 0;
   color: #526579;
-  font-size: clamp(16px, 1.8vw, 18px);
-  line-height: 1.8;
+  font-size: clamp(16px, 1.7vw, 18px);
+  line-height: 1.75;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 29px;
+  margin-top: 27px;
 }
 
 .btn {
   display: inline-flex;
-  min-height: 48px;
+  min-height: 50px;
   align-items: center;
   justify-content: center;
   gap: 17px;
-  padding: 0 19px;
+  padding: 0 20px;
   border: 1px solid transparent;
-  border-radius: 9px;
+  border-radius: 10px;
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .btn:hover {
@@ -320,10 +333,12 @@ section h2,
 .btn-primary {
   color: white;
   background: var(--ink);
+  box-shadow: 0 10px 24px rgba(24, 50, 75, 0.16);
 }
 
 .btn-primary:hover {
   background: #274b68;
+  box-shadow: 0 14px 28px rgba(24, 50, 75, 0.20);
 }
 
 .btn-secondary {
@@ -341,13 +356,14 @@ section h2,
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .hero-stack span {
-  padding: 6px 10px;
+  padding: 7px 11px;
   border: 1px solid #e2e8f0;
-  border-radius: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
   color: #64748b;
   font-size: 11px;
   font-weight: 600;
@@ -1014,6 +1030,10 @@ footer > p {
   .hero-content {
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
     gap: 35px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 6.5vw, 64px);
   }
 
   .profile-image {
