@@ -4,8 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hasan Fadillah | Backend Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Hasan Fadillah | Backend Engineer</title>
+  <meta name="description"
+    content="Hasan Fadillah is a backend engineer building scalable APIs, payment integrations, and reliable enterprise systems.">
+  <meta name="theme-color" content="#f8fafc">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/ico/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/ico/favicon-16x16.png">
@@ -14,392 +21,481 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="./assets/logo.png" alt="Logo">
-    </div>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Hasan Fadillah, home">
+      <span class="brand-mark" aria-hidden="true">HF</span>
+      <span>Hasan Fadillah<small>Backend Engineer</small></span>
+    </a>
     <ul id="nav-menu" class="nav-menu">
       <li><a href="#about" data-en="About" data-id="Tentang">About</a></li>
-      <li><a href="#stack" data-en="Stack" data-id="Stack">Stack</a></li>
+      <li><a href="#stack" data-en="Expertise" data-id="Keahlian">Expertise</a></li>
       <li><a href="#experience" data-en="Experience" data-id="Pengalaman">Experience</a></li>
       <li><a href="#projects" data-en="Projects" data-id="Proyek">Projects</a></li>
-      <li><a href="#certificates" data-en="Certificates" data-id="Sertifikat">Certificates</a></li>
+      <li><a href="#certificates" data-en="Credentials" data-id="Sertifikasi">Credentials</a></li>
     </ul>
     <div class="nav-right">
-      <div class="lang-btn" id="lang-toggle">ID</div>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <button class="lang-btn" id="lang-toggle" type="button" aria-label="Switch language to Indonesian">ID</button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="nav-menu"><span></span><span></span></button>
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <a href="./assets/hasan.png" target="_blank" class="profile-image">
-        <img src="./assets/hasan.png" alt="Hasan Fadillah">
-      </a>
-      <div>
-        <h1>Hasan Fadillah</h1>
-        <p data-en="Backend Engineer specializing in scalable backend systems, RESTful APIs, payment gateway integrations, and enterprise applications. Experienced in building high-performance solutions using Golang, Laravel, Next.js, and modern cloud technologies."
-          data-id="Backend Engineer yang berfokus pada pengembangan sistem backend yang scalable, RESTful API, integrasi payment gateway, dan aplikasi enterprise. Berpengalaman membangun solusi berperforma tinggi menggunakan Golang, Laravel, Next.js, serta teknologi cloud modern.">
-          Backend Engineer specializing in scalable backend systems, RESTful APIs,
-          payment gateway integrations, and enterprise applications. Experienced in
-          building high-performance solutions using Golang, Laravel, Next.js,
-          and modern cloud technologies.
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="availability"><span></span><span data-en="Building dependable digital products"
+              data-id="Membangun produk digital yang andal">Building dependable digital products</span></div>
+          <p class="hero-label" data-en="BACKEND ENGINEER · FULL-STACK DEVELOPER"
+            data-id="BACKEND ENGINEER · FULL-STACK DEVELOPER">BACKEND ENGINEER · FULL-STACK DEVELOPER</p>
+          <h1>Hasan Fadillah<span>.</span></h1>
+          <p class="hero-intro"
+            data-en="I build scalable backend systems, thoughtful APIs, and integrations that keep real-world products running reliably."
+            data-id="Saya membangun sistem backend yang scalable, API yang terancang baik, dan integrasi yang menjaga produk digital tetap berjalan andal.">
+            I build scalable backend systems, thoughtful APIs, and integrations that keep real-world products running
+            reliably.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:hasan.tecnic@gmail.com"><span data-en="Let's talk"
+                data-id="Hubungi saya">Let's talk</span><span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" id="cv-link" href="./assets/CV Hasan Fadillah EN.pdf" target="_blank"
+              rel="noopener noreferrer"><span data-en="View résumé" data-id="Lihat CV">View résumé</span><span
+                aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-stack" aria-label="Specialties">
+            <span>Golang</span><span>Laravel</span><span>REST APIs</span><span>Payments</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <a href="./assets/hasan.png" target="_blank" rel="noopener noreferrer" class="profile-image"
+            aria-label="View Hasan's portrait">
+            <img src="./assets/hasan.png" alt="Hasan Fadillah">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section bg">
+      <div class="container">
+        <p class="section-kicker" data-en="A BIT ABOUT ME" data-id="TENTANG SAYA">A BIT ABOUT ME</p>
+        <h2 data-en="About" data-id="Tentang">About</h2>
+        <p data-en="I'm a Backend Engineer with over 3 years of experience developing enterprise applications, marketplace platforms, manufacturing systems, and financial integrations. I enjoy designing scalable architectures, optimizing application performance, and delivering reliable solutions that solve real business challenges."
+          data-id="Saya adalah Backend Engineer dengan pengalaman lebih dari 3 tahun dalam mengembangkan aplikasi enterprise, platform marketplace, sistem manufaktur, dan integrasi layanan keuangan. Saya senang merancang arsitektur yang scalable, mengoptimalkan performa aplikasi, serta membangun solusi yang andal untuk menyelesaikan kebutuhan bisnis nyata.">
+          I'm a Backend Engineer with over 3 years of experience developing enterprise applications, marketplace
+          platforms, manufacturing systems, and financial integrations. I enjoy designing scalable architectures,
+          optimizing application performance, and delivering reliable solutions that solve real business challenges.
         </p>
-        <a class="btn" href="./assets/CV Hasan Fadillah.pdf" target="_blank">
-          Download CV
-        </a>
-      </div>
-
-    </div>
-  </section>
-  <section id="about" class="bg">
-    <div class="container">
-      <h2 data-en="About" data-id="Tentang">About</h2>
-      <p data-en="I'm a Backend Engineer with over 3 years of experience developing enterprise applications, marketplace platforms, manufacturing systems, and financial integrations. I enjoy designing scalable architectures, optimizing application performance, and delivering reliable solutions that solve real business challenges."
-        data-id="Saya adalah Backend Engineer dengan pengalaman lebih dari 3 tahun dalam mengembangkan aplikasi enterprise, platform marketplace, sistem manufaktur, dan integrasi layanan keuangan. Saya senang merancang arsitektur yang scalable, mengoptimalkan performa aplikasi, serta membangun solusi yang andal untuk menyelesaikan kebutuhan bisnis nyata.">
-        I'm a Backend Engineer with over 3 years of experience developing enterprise applications, marketplace
-        platforms, manufacturing systems, and financial integrations. I enjoy designing scalable architectures,
-        optimizing application performance, and delivering reliable solutions that solve real business challenges.
-      </p>
-    </div>
-  </section>
-  <section id="stack">
-    <div class="container">
-      <h2 data-en="Stack" data-id="Stack">Stack</h2>
-      <div class="stack-grid">
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
-          <span class="tooltip">Laravel</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Golang">
-          <span class="tooltip">Golang</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
-          <span class="tooltip">Flutter</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg"
-            alt="CodeIgniter">
-          <span class="tooltip">CodeIgniter</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-          <span class="tooltip">PHP</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-          <span class="tooltip">HTML5</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-          <span class="tooltip">CSS3</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript">
-          <span class="tooltip">JavaScript</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
-          <span class="tooltip">Redis</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.simpleicons.org/minio/C72E49" alt="MinIO Object Storage">
-          <span class="tooltip">MinIO</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-            alt="PostgreSQL Database">
-          <span class="tooltip">PostgreSQL</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Database">
-          <span class="tooltip">MySQL</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-          <span class="tooltip">Git</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-            alt="Visual Studio Code">
-          <span class="tooltip">Visual Studio Code</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
-          <span class="tooltip">Figma</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
-          <span class="tooltip">Postman</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.simpleicons.org/diagramsdotnet/F08705" alt="Draw.io">
-          <span class="tooltip">Draw.io</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
-          <span class="tooltip">Next.js</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-          <span class="tooltip">Node.js</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n">
-          <span class="tooltip">n8n</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.simpleicons.org/rabbitmq/FF6600" alt="RabbitMQ">
-          <span class="tooltip">RabbitMQ</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.simpleicons.org/rundeck/F73F39" alt="Rundeck">
-          <span class="tooltip">Rundeck</span>
-        </div>
-        <div class="stack-item">
-          <img src="https://cdn.simpleicons.org/elasticsearch/005571" alt="Elasticsearch">
-          <span class="tooltip">Elasticsearch</span>
-        </div>
-        <div class="stack-item">
-          <img src="./assets/project/svg/midtrans.svg" alt="Midtrans">
-          <span class="tooltip">Midtrans</span>
-        </div>
-        <div class="stack-item">
-          <img src="./assets/project/svg/briapi.svg" alt="BRIAPI">
-          <span class="tooltip">BRIAPI</span>
-        </div>
-        <div class="stack-item">
-          <img src="./assets/project/svg/komodo.svg" alt="KOMODO">
-          <span class="tooltip">KOMODO</span>
+        <div class="about-points">
+          <span><b>01</b> <span data-en="Scalable architecture" data-id="Arsitektur scalable">Scalable
+              architecture</span></span>
+          <span><b>02</b> <span data-en="Financial integrations" data-id="Integrasi finansial">Financial
+              integrations</span></span>
+          <span><b>03</b> <span data-en="Business-critical systems" data-id="Sistem penting bisnis">Business-critical
+              systems</span></span>
         </div>
       </div>
-  </section>
-  <!-- EXPERIENCE -->
-  <section class="experience-section bg" id="experience">
-    <div class="container">
-      <h2 class="section-title" data-en="Experience" data-id="Pengalaman">Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item left">
-          <div class="content">
-            <span class="date" data-en="Nov 2025 - Present" data-id="Nov 2025 - Sekarang">Nov 2025 - Present</span>
-            <h4>PT Bringin Inti Teknologi - Bitcorp.</h4>
-            <p class="justify-text"
-              data-en="Serving as a Full-Stack Developer and Team Lead, leading the development and integration of enterprise systems for the Localoka and PARI platforms. Responsible for designing scalable architectures, coordinating the development team, delivering high-quality solutions, and ensuring seamless integration across multiple business services."
-              data-id="Berperan sebagai Full-Stack Developer sekaligus Team Lead dalam pengembangan dan integrasi sistem enterprise untuk platform Localoka dan PARI. Bertanggung jawab merancang arsitektur yang scalable, mengoordinasikan tim pengembang, menghadirkan solusi berkualitas tinggi, serta memastikan integrasi yang berjalan lancar di berbagai layanan bisnis.">
-              Serving as a Full-Stack Developer and Team Lead, leading the development and integration of enterprise
-              systems for the Localoka and PARI platforms. Responsible for designing scalable architectures,
-              coordinating the development team, delivering high-quality solutions, and ensuring seamless integration
-              across multiple business services.
-            </p>
+    </section>
+    <section id="stack">
+      <div class="container">
+        <p class="section-kicker" data-en="TOOLS OF THE TRADE" data-id="TEKNOLOGI YANG DIGUNAKAN">TOOLS OF THE TRADE</p>
+        <h2 data-en="Expertise & technology" data-id="Keahlian & teknologi">Expertise & technology</h2>
+        <div class="stack-grid">
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+            <span class="tooltip">Laravel</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Golang">
+            <span class="tooltip">Golang</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+            <span class="tooltip">Flutter</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg"
+              alt="CodeIgniter">
+            <span class="tooltip">CodeIgniter</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+            <span class="tooltip">PHP</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <span class="tooltip">HTML5</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <span class="tooltip">CSS3</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript">
+            <span class="tooltip">JavaScript</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
+            <span class="tooltip">Redis</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.simpleicons.org/minio/C72E49" alt="MinIO Object Storage">
+            <span class="tooltip">MinIO</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://api.iconify.design/logos/aws-s3.svg" alt="Amazon S3" loading="lazy" decoding="async">
+            <span class="tooltip">Amazon S3</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL Database">
+            <span class="tooltip">PostgreSQL</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Database">
+            <span class="tooltip">MySQL</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy" decoding="async">
+            <span class="tooltip">MongoDB</span>
+          </div>
+          <div class="stack-item">
+            <img src="./assets/skills/database-design.svg" alt="Database design diagram" loading="lazy" decoding="async">
+            <span class="tooltip">Database Design</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <span class="tooltip">Git</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="Visual Studio Code">
+            <span class="tooltip">Visual Studio Code</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+            <span class="tooltip">Figma</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+            <span class="tooltip">Postman</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://api.iconify.design/logos/apidog-icon.svg" alt="Apidog" loading="lazy" decoding="async">
+            <span class="tooltip">Apidog</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.simpleicons.org/diagramsdotnet/F08705" alt="Draw.io">
+            <span class="tooltip">Draw.io</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+            <span class="tooltip">Next.js</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+            <span class="tooltip">Node.js</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n">
+            <span class="tooltip">n8n</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.simpleicons.org/rabbitmq/FF6600" alt="RabbitMQ">
+            <span class="tooltip">RabbitMQ</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.simpleicons.org/rundeck/F73F39" alt="Rundeck">
+            <span class="tooltip">Rundeck</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.simpleicons.org/elasticsearch/005571" alt="Elasticsearch">
+            <span class="tooltip">Elasticsearch</span>
+          </div>
+          <div class="stack-item">
+            <img src="./assets/project/svg/midtrans.svg" alt="Midtrans">
+            <span class="tooltip">Midtrans</span>
+          </div>
+          <div class="stack-item">
+            <img src="./assets/project/svg/briapi.svg" alt="BRIAPI">
+            <span class="tooltip">BRIAPI</span>
+          </div>
+          <div class="stack-item">
+            <img src="./assets/project/svg/komodo.svg" alt="KOMODO">
+            <span class="tooltip">KOMODO</span>
+          </div>
+          <!-- Dokploy icon by selfh.st/icons, licensed CC BY 4.0: https://github.com/selfhst/icons -->
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/dokploy.svg" alt="Dokploy" loading="lazy" decoding="async">
+            <span class="tooltip">Dokploy</span>
+          </div>
+          <div class="stack-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" loading="lazy" decoding="async">
+            <span class="tooltip">Nginx</span>
+          </div>
+          <div class="stack-item">
+            <img src="./assets/skills/hosting.svg" alt="Hosting and server deployment" loading="lazy" decoding="async">
+            <span class="tooltip">Hosting</span>
           </div>
         </div>
-        <div class="timeline-item right">
-          <div class="content">
-            <span class="date" data-en="Mar 2024 - Nov 2025" data-id="Mar 2024 - Nov 2025">Mar 2024 - Nov 2025</span>
-            <h4>PT Super Pasar Rakyat Indonesia</h4>
-            <p class="justify-text"
-              data-en="Developed and maintained backend services for PARI (Pasar Rakyat Indonesia), a digital marketplace platform supporting online transactions and merchant operations. Designed RESTful APIs, integrated payment gateways and third-party services, optimized database performance, and built internal business systems to improve operational efficiency and scalability."
-              data-id="Mengembangkan dan memelihara layanan backend untuk PARI (Pasar Rakyat Indonesia), platform marketplace digital yang mendukung transaksi online dan operasional merchant. Merancang RESTful API, mengintegrasikan payment gateway serta layanan pihak ketiga, mengoptimalkan performa database, dan membangun sistem internal guna meningkatkan efisiensi operasional serta skalabilitas bisnis.">
-              Developed and maintained backend services for PARI (Pasar Rakyat Indonesia), a digital marketplace
-              platform supporting online transactions and merchant operations. Designed RESTful APIs, integrated payment
-              gateways and third-party services, optimized database performance, and built internal business systems to
-              improve operational efficiency and scalability.
-            </p>
+    </section>
+    <!-- EXPERIENCE -->
+    <section class="experience-section bg" id="experience">
+      <div class="container">
+        <p class="section-kicker" data-en="WHERE I HAVE MADE AN IMPACT" data-id="PENGALAMAN PROFESIONAL">WHERE I HAVE
+          MADE AN IMPACT</p>
+        <h2 class="section-title" data-en="Experience" data-id="Pengalaman">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="content">
+              <span class="date" data-en="Oct 2026 - Present" data-id="Oct 2026 - Sekarang">Oct 2026 - Present</span>
+              <h4>PT Indonesia Digital Koneksi</h4>
+              <p class="justify-text"
+                data-en="Serving as a Backend Developer in the development of PARILOKA, a B2B digital commerce platform developed in collaboration with BRILink. Responsible for designing scalable system architectures, developing core business features, integrating business services, and coordinating the development team to deliver reliable, secure, and efficient digital solutions."
+                data-id="Berperan sebagai Backend Developer dalam pengembangan PARILOKA, platform perdagangan digital B2B yang dikembangkan melalui kerja sama dengan BRILink. Bertanggung jawab dalam perancangan arsitektur sistem yang scalable, pengembangan fitur bisnis utama, integrasi layanan, serta koordinasi tim pengembang untuk menghadirkan solusi digital yang andal, aman, dan efisien.">
+                Serving as a Backend Developer in the
+                development of PARILOKA, a B2B digital commerce platform
+                developed in collaboration with BRILink. Responsible for
+                designing scalable system architectures, developing core
+                business features, integrating business services, and
+                coordinating the development team to deliver reliable,
+                secure, and efficient digital solutions.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="content">
-            <span class="date" data-en="Aug 2023 - Mar 2024" data-id="Agu 2023 - Mar 2024">Aug 2023 - Mar 2024</span>
-            <h4>PT Rynest Technology Indomedia</h4>
-            <p class="justify-text"
-              data-en="Contributed to the development of VOCAPEDIA, a web-based internship and career platform connecting students with companies. Built backend services, developed responsive user interfaces, integrated system features, and optimized application performance to provide a reliable and seamless recruitment experience."
-              data-id="Berkontribusi dalam pengembangan VOCAPEDIA, platform berbasis web yang menghubungkan mahasiswa dengan perusahaan untuk kebutuhan magang dan karier. Mengembangkan layanan backend, membangun antarmuka yang responsif, mengintegrasikan berbagai fitur sistem, serta mengoptimalkan performa aplikasi agar memberikan pengalaman rekrutmen yang andal dan efisien.">
-              Contributed to the development of VOCAPEDIA, a web-based internship and career platform connecting
-              students with companies. Built backend services, developed responsive user interfaces, integrated system
-              features, and optimized application performance to provide a reliable and seamless recruitment experience.
-            </p>
+          <div class="timeline-item left">
+            <div class="content">
+              <span class="date" data-en="Nov 2025 - Oct 2026" data-id="Nov 2025 - Oct 2026">Nov 2025 - Oct 2026</span>
+              <h4>PT Bringin Inti Teknologi - Bitcorp.</h4>
+              <p class="justify-text"
+                data-en="Serving as a Full-Stack Developer and Team Lead, leading the development and integration of enterprise systems for the Localoka and PARI platforms. Responsible for designing scalable architectures, coordinating the development team, delivering high-quality solutions, and ensuring seamless integration across multiple business services."
+                data-id="Berperan sebagai Full-Stack Developer sekaligus Team Lead dalam pengembangan dan integrasi sistem enterprise untuk platform Localoka dan PARI. Bertanggung jawab merancang arsitektur yang scalable, mengoordinasikan tim pengembang, menghadirkan solusi berkualitas tinggi, serta memastikan integrasi yang berjalan lancar di berbagai layanan bisnis.">
+                Serving as a Full-Stack Developer and Team Lead, leading the development and integration of enterprise
+                systems for the Localoka and PARI platforms. Responsible for designing scalable architectures,
+                coordinating the development team, delivering high-quality solutions, and ensuring seamless integration
+                across multiple business services.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="content">
-            <span class="date" data-en="Apr 2023 - Oct 2023" data-id="Apr 2023 - Oct 2023">Apr 2023 - Oct 2023</span>
-            <h4>PT Glosa Media 62</h4>
-            <p class="justify-text"
-              data-en="Designed and developed responsive corporate landing pages for clients, transforming business requirements into modern, user-friendly websites. Focused on performance, mobile responsiveness, SEO-friendly implementation, and delivering engaging digital experiences that strengthen clients' online presence."
-              data-id="Merancang dan mengembangkan website landing page perusahaan yang responsif sesuai kebutuhan klien. Berfokus pada performa, tampilan yang ramah di berbagai perangkat, implementasi yang SEO-friendly, serta menghadirkan pengalaman digital yang menarik untuk memperkuat kehadiran bisnis klien di dunia digital.">
-              Designed and developed responsive corporate landing pages for clients, transforming business requirements
-              into modern, user-friendly websites. Focused on performance, mobile responsiveness, SEO-friendly
-              implementation, and delivering engaging digital experiences that strengthen clients' online presence.
-            </p>
+          <div class="timeline-item right">
+            <div class="content">
+              <span class="date" data-en="Mar 2024 - Nov 2025" data-id="Mar 2024 - Nov 2025">Mar 2024 - Nov 2025</span>
+              <h4>PT Super Pasar Rakyat Indonesia</h4>
+              <p class="justify-text"
+                data-en="Developed and maintained backend services for PARI (Pasar Rakyat Indonesia), a digital marketplace platform supporting online transactions and merchant operations. Designed RESTful APIs, integrated payment gateways and third-party services, optimized database performance, and built internal business systems to improve operational efficiency and scalability."
+                data-id="Mengembangkan dan memelihara layanan backend untuk PARI (Pasar Rakyat Indonesia), platform marketplace digital yang mendukung transaksi online dan operasional merchant. Merancang RESTful API, mengintegrasikan payment gateway serta layanan pihak ketiga, mengoptimalkan performa database, dan membangun sistem internal guna meningkatkan efisiensi operasional serta skalabilitas bisnis.">
+                Developed and maintained backend services for PARI (Pasar Rakyat Indonesia), a digital marketplace
+                platform supporting online transactions and merchant operations. Designed RESTful APIs, integrated
+                payment
+                gateways and third-party services, optimized database performance, and built internal business systems
+                to
+                improve operational efficiency and scalability.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="content">
-            <span class="date" data-en="Mar 2019 - Jul 2023" data-id="Mar 2019 - Jul 2023">Mar 2019 - Jul 2023</span>
-            <h4>PT Subaga Mitra Solusi</h4>
-            <p class="justify-text"
-              data-en="Developed and enhanced enterprise web applications by implementing logistics, work order (SPK), and reporting modules to support business operations. Built reusable application components, optimized system performance, ensured data consistency across integrated systems, and collaborated with cross-functional teams to deliver scalable business solutions."
-              data-id="Mengembangkan dan menyempurnakan aplikasi web enterprise melalui implementasi modul logistik, Surat Perintah Kerja (SPK), dan pelaporan untuk mendukung operasional bisnis. Membangun komponen aplikasi yang dapat digunakan kembali, mengoptimalkan performa sistem, menjaga konsistensi data antar sistem terintegrasi, serta berkolaborasi dengan berbagai tim untuk menghadirkan solusi bisnis yang scalable.">
-              Developed and enhanced enterprise web applications by implementing logistics, work order (SPK), and
-              reporting modules to support business operations. Built reusable application components, optimized system
-              performance, ensured data consistency across integrated systems, and collaborated with cross-functional
-              teams to deliver scalable business solutions.
-            </p>
+          <div class="timeline-item left">
+            <div class="content">
+              <span class="date" data-en="Aug 2023 - Mar 2024" data-id="Agu 2023 - Mar 2024">Aug 2023 - Mar 2024</span>
+              <h4>PT Rynest Technology Indomedia</h4>
+              <p class="justify-text"
+                data-en="Contributed to the development of VOCAPEDIA, a web-based internship and career platform connecting students with companies. Built backend services, developed responsive user interfaces, integrated system features, and optimized application performance to provide a reliable and seamless recruitment experience."
+                data-id="Berkontribusi dalam pengembangan VOCAPEDIA, platform berbasis web yang menghubungkan mahasiswa dengan perusahaan untuk kebutuhan magang dan karier. Mengembangkan layanan backend, membangun antarmuka yang responsif, mengintegrasikan berbagai fitur sistem, serta mengoptimalkan performa aplikasi agar memberikan pengalaman rekrutmen yang andal dan efisien.">
+                Contributed to the development of VOCAPEDIA, a web-based internship and career platform connecting
+                students with companies. Built backend services, developed responsive user interfaces, integrated system
+                features, and optimized application performance to provide a reliable and seamless recruitment
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="content">
+              <span class="date" data-en="Apr 2023 - Oct 2023" data-id="Apr 2023 - Oct 2023">Apr 2023 - Oct 2023</span>
+              <h4>PT Glosa Media 62</h4>
+              <p class="justify-text"
+                data-en="Designed and developed responsive corporate landing pages for clients, transforming business requirements into modern, user-friendly websites. Focused on performance, mobile responsiveness, SEO-friendly implementation, and delivering engaging digital experiences that strengthen clients' online presence."
+                data-id="Merancang dan mengembangkan website landing page perusahaan yang responsif sesuai kebutuhan klien. Berfokus pada performa, tampilan yang ramah di berbagai perangkat, implementasi yang SEO-friendly, serta menghadirkan pengalaman digital yang menarik untuk memperkuat kehadiran bisnis klien di dunia digital.">
+                Designed and developed responsive corporate landing pages for clients, transforming business
+                requirements
+                into modern, user-friendly websites. Focused on performance, mobile responsiveness, SEO-friendly
+                implementation, and delivering engaging digital experiences that strengthen clients' online presence.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="content">
+              <span class="date" data-en="Mar 2019 - Jul 2023" data-id="Mar 2019 - Jul 2023">Mar 2019 - Jul 2023</span>
+              <h4>PT Subaga Mitra Solusi</h4>
+              <p class="justify-text"
+                data-en="Developed and enhanced enterprise web applications by implementing logistics, work order (SPK), and reporting modules to support business operations. Built reusable application components, optimized system performance, ensured data consistency across integrated systems, and collaborated with cross-functional teams to deliver scalable business solutions."
+                data-id="Mengembangkan dan menyempurnakan aplikasi web enterprise melalui implementasi modul logistik, Surat Perintah Kerja (SPK), dan pelaporan untuk mendukung operasional bisnis. Membangun komponen aplikasi yang dapat digunakan kembali, mengoptimalkan performa sistem, menjaga konsistensi data antar sistem terintegrasi, serta berkolaborasi dengan berbagai tim untuk menghadirkan solusi bisnis yang scalable.">
+                Developed and enhanced enterprise web applications by implementing logistics, work order (SPK), and
+                reporting modules to support business operations. Built reusable application components, optimized
+                system
+                performance, ensured data consistency across integrated systems, and collaborated with cross-functional
+                teams to deliver scalable business solutions.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects">
-    <div class="container">
-      <h2 data-en="Projects" data-id="Proyek">Projects</h2>
-      <div class="carousel">
-        <button class="carousel-btn prev">‹</button>
-        <div class="carousel-track" id="carouselTrack">
+    <section id="projects">
+      <div class="container">
+        <p class="section-kicker" data-en="SELECTED WORK" data-id="PROYEK PILIHAN">SELECTED WORK</p>
+        <h2 data-en="Projects" data-id="Proyek">Projects</h2>
+        <p class="section-intro" data-en="A selection of products and systems I have helped bring to life."
+          data-id="Beberapa produk dan sistem yang saya bantu kembangkan.">A selection of products and systems I have
+          helped bring to life.</p>
+        <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Project highlights">
+          <button class="carousel-btn prev" type="button" aria-label="Previous projects">‹</button>
+          <div class="carousel-track" id="carouselTrack">
 
-          <!-- PROJECT 1 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://pari.co.id" target="_blank">
-                <img src="./assets/project/pari.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>PARI - Pasar Rakyat Indonesia</h3>
-                <p class="justify-text"
-                  data-en="Developed a digital marketplace platform for food commodities that connects suppliers, distributors, and buyers across Indonesia. Contributed to backend API development, payment integration, logistics services, and scalable system architecture to support secure and efficient marketplace operations."
-                  data-id="Mengembangkan platform marketplace digital komoditas pangan yang menghubungkan pemasok, distributor, dan pembeli di seluruh Indonesia. Berkontribusi dalam pengembangan Backend API, integrasi pembayaran, layanan logistik, serta arsitektur sistem yang scalable untuk mendukung operasional marketplace yang aman dan efisien.">
-                  Developed a digital marketplace platform for food commodities that connects suppliers, distributors,
-                  and buyers across Indonesia. Contributed to backend API development, payment integration, logistics
-                  services, and scalable system architecture to support secure and efficient marketplace operations.
-                </p>
-                <div class="tech-tags">
-                  <div class="project-links">
-                    <a href="https://play.google.com/store/apps/details?id=io.indiflix.pari.widget" target="_blank"
-                      class="btn-store">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466 511.98" width="40">
-                        <path fill="#EA4335"
-                          d="M199.9 237.8l-198.5 232.37c7.22,24.57 30.16,41.81 55.8,41.81 11.16,0 20.93,-2.79 29.3,-8.37l244.16 -139.46 -130.76 -126.35z" />
-                        <path fill="#FBBC04"
-                          d="M433.91 205.1l-104.65 -60 -111.61 110.22 113.01 108.83 104.64 -58.6c18.14,-9.77 30.7,-29.3 30.7,-50.23 -1.4,-20.93 -13.95,-40.46 -32.09,-50.22z" />
-                        <path fill="#34A853"
-                          d="M199.42 273.45l129.85 -128.35 -241.37 -136.73c-8.37,-5.58 -19.54,-8.37 -30.7,-8.37 -26.5,0 -50.22,18.14 -55.8,41.86l198.02 231.59z" />
-                        <path fill="#4285F4"
-                          d="M1.39 41.86c-1.39,4.18 -1.39,9.77 -1.39,15.34l0 397.64c0,5.57 0,9.76 1.4,15.34l216.27 -214.86 -216.28 -213.46z" />
-                      </svg>
-                    </a>
+            <!-- PROJECT 1 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://pari.co.id" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/pari.png" class="project-image" alt="Screenshot of PARI" loading="lazy"
+                    decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>PARI - Pasar Rakyat Indonesia</h3>
+                  <p class="justify-text"
+                    data-en="Developed a digital marketplace platform for food commodities that connects suppliers, distributors, and buyers across Indonesia. Contributed to backend API development, payment integration, logistics services, and scalable system architecture to support secure and efficient marketplace operations."
+                    data-id="Mengembangkan platform marketplace digital komoditas pangan yang menghubungkan pemasok, distributor, dan pembeli di seluruh Indonesia. Berkontribusi dalam pengembangan Backend API, integrasi pembayaran, layanan logistik, serta arsitektur sistem yang scalable untuk mendukung operasional marketplace yang aman dan efisien.">
+                    Developed a digital marketplace platform for food commodities that connects suppliers, distributors,
+                    and buyers across Indonesia. Contributed to backend API development, payment integration, logistics
+                    services, and scalable system architecture to support secure and efficient marketplace operations.
+                  </p>
+                  <div class="tech-tags">
+                    <div class="project-links">
+                      <a href="https://play.google.com/store/apps/details?id=io.indiflix.pari.widget" target="_blank"
+                        rel="noopener noreferrer" class="btn-store">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466 511.98" width="40">
+                          <path fill="#EA4335"
+                            d="M199.9 237.8l-198.5 232.37c7.22,24.57 30.16,41.81 55.8,41.81 11.16,0 20.93,-2.79 29.3,-8.37l244.16 -139.46 -130.76 -126.35z" />
+                          <path fill="#FBBC04"
+                            d="M433.91 205.1l-104.65 -60 -111.61 110.22 113.01 108.83 104.64 -58.6c18.14,-9.77 30.7,-29.3 30.7,-50.23 -1.4,-20.93 -13.95,-40.46 -32.09,-50.22z" />
+                          <path fill="#34A853"
+                            d="M199.42 273.45l129.85 -128.35 -241.37 -136.73c-8.37,-5.58 -19.54,-8.37 -30.7,-8.37 -26.5,0 -50.22,18.14 -55.8,41.86l198.02 231.59z" />
+                          <path fill="#4285F4"
+                            d="M1.39 41.86c-1.39,4.18 -1.39,9.77 -1.39,15.34l0 397.64c0,5.57 0,9.76 1.4,15.34l216.27 -214.86 -216.28 -213.46z" />
+                        </svg>
+                      </a>
+                    </div>
+                    <span>Laravel</span>
+                    <span>Golang</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>MinIO</span>
+                    <span>Docker</span>
                   </div>
-                  <span>Laravel</span>
-                  <span>Golang</span>
-                  <span>MySQL</span>
-                  <span>Redis</span>
-                  <span>MinIO</span>
-                  <span>Docker</span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 2 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://localoka.co.id" target="_blank">
-                <img src="./assets/project/localoka.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Localoka</h3>
-                <p class="justify-text"
-                  data-en="Developed an e-commerce platform that empowers Indonesian MSMEs to market and sell local products digitally. Built scalable backend services, product management, search functionality, and transaction processing to improve the online shopping experience."
-                  data-id="Mengembangkan platform e-commerce yang memberdayakan UMKM Indonesia untuk memasarkan dan menjual produk lokal secara digital. Membangun layanan backend yang scalable, manajemen produk, fitur pencarian, serta pemrosesan transaksi guna meningkatkan pengalaman berbelanja secara online.">
-                  Developed an e-commerce platform that empowers Indonesian MSMEs to market and sell local products
-                  digitally. Built scalable backend services, product management, search functionality, and transaction
-                  processing to improve the online shopping experience.</p>
-                <div class="tech-tags">
-                  <div class="project-links">
-                    <a href="https://play.google.com/store/apps/details?id=id.co.localoka.mobile&hl=id" target="_blank"
-                      class="btn-store">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466 511.98" width="40">
-                        <path fill="#EA4335"
-                          d="M199.9 237.8l-198.5 232.37c7.22,24.57 30.16,41.81 55.8,41.81 11.16,0 20.93,-2.79 29.3,-8.37l244.16 -139.46 -130.76 -126.35z" />
-                        <path fill="#FBBC04"
-                          d="M433.91 205.1l-104.65 -60 -111.61 110.22 113.01 108.83 104.64 -58.6c18.14,-9.77 30.7,-29.3 30.7,-50.23 -1.4,-20.93 -13.95,-40.46 -32.09,-50.22z" />
-                        <path fill="#34A853"
-                          d="M199.42 273.45l129.85 -128.35 -241.37 -136.73c-8.37,-5.58 -19.54,-8.37 -30.7,-8.37 -26.5,0 -50.22,18.14 -55.8,41.86l198.02 231.59z" />
-                        <path fill="#4285F4"
-                          d="M1.39 41.86c-1.39,4.18 -1.39,9.77 -1.39,15.34l0 397.64c0,5.57 0,9.76 1.4,15.34l216.27 -214.86 -216.28 -213.46z" />
-                      </svg>
-                    </a>
+            <!-- PROJECT 2 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://localoka.co.id" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/localoka.png" class="project-image" alt="Screenshot of Localoka"
+                    loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Localoka</h3>
+                  <p class="justify-text"
+                    data-en="Developed an e-commerce platform that empowers Indonesian MSMEs to market and sell local products digitally. Built scalable backend services, product management, search functionality, and transaction processing to improve the online shopping experience."
+                    data-id="Mengembangkan platform e-commerce yang memberdayakan UMKM Indonesia untuk memasarkan dan menjual produk lokal secara digital. Membangun layanan backend yang scalable, manajemen produk, fitur pencarian, serta pemrosesan transaksi guna meningkatkan pengalaman berbelanja secara online.">
+                    Developed an e-commerce platform that empowers Indonesian MSMEs to market and sell local products
+                    digitally. Built scalable backend services, product management, search functionality, and
+                    transaction
+                    processing to improve the online shopping experience.</p>
+                  <div class="tech-tags">
+                    <div class="project-links">
+                      <a href="https://play.google.com/store/apps/details?id=id.co.localoka.mobile&hl=id"
+                        target="_blank" rel="noopener noreferrer" class="btn-store">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466 511.98" width="40">
+                          <path fill="#EA4335"
+                            d="M199.9 237.8l-198.5 232.37c7.22,24.57 30.16,41.81 55.8,41.81 11.16,0 20.93,-2.79 29.3,-8.37l244.16 -139.46 -130.76 -126.35z" />
+                          <path fill="#FBBC04"
+                            d="M433.91 205.1l-104.65 -60 -111.61 110.22 113.01 108.83 104.64 -58.6c18.14,-9.77 30.7,-29.3 30.7,-50.23 -1.4,-20.93 -13.95,-40.46 -32.09,-50.22z" />
+                          <path fill="#34A853"
+                            d="M199.42 273.45l129.85 -128.35 -241.37 -136.73c-8.37,-5.58 -19.54,-8.37 -30.7,-8.37 -26.5,0 -50.22,18.14 -55.8,41.86l198.02 231.59z" />
+                          <path fill="#4285F4"
+                            d="M1.39 41.86c-1.39,4.18 -1.39,9.77 -1.39,15.34l0 397.64c0,5.57 0,9.76 1.4,15.34l216.27 -214.86 -216.28 -213.46z" />
+                        </svg>
+                      </a>
+                    </div>
+                    <span>Golang</span>
+                    <span>Postgres</span>
+                    <span>RabbitMQ</span>
+                    <span>Redis</span>
+                    <span>MinIO</span>
+                    <span>Elasticsearch</span>
+                    <span>Docker</span>
                   </div>
-                  <span>Golang</span>
-                  <span>Postgres</span>
-                  <span>RabbitMQ</span>
-                  <span>Redis</span>
-                  <span>MinIO</span>
-                  <span>Elasticsearch</span>
-                  <span>Docker</span>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 3 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://dashboard-recon.superpari.co.id" target="_blank">
-                <img src="./assets/project/recon.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Dashboard Recon PARI</h3>
-                <p class="justify-text"
-                  data-en="Developed a financial reconciliation dashboard that automates transaction matching between bank statements and internal financial records. The system improves reconciliation accuracy, reduces manual effort, and accelerates transaction validation through real-time reporting."
-                  data-id="Mengembangkan dashboard rekonsiliasi keuangan yang mengotomatisasi proses pencocokan transaksi antara rekening koran bank dan data keuangan internal perusahaan. Sistem ini meningkatkan akurasi rekonsiliasi, mengurangi pekerjaan manual, serta mempercepat validasi transaksi melalui pelaporan secara real-time.">
-                  Developed a financial reconciliation dashboard that automates transaction matching between bank
-                  statements and internal financial records. The system improves reconciliation accuracy, reduces manual
-                  effort, and accelerates transaction validation through real-time reporting.
-                </p>
-                <div class="tech-tags">
-                  <span>Laravel</span>
-                  <span>MySQL</span>
-                  <span>Redis</span>
-                  <span>Docker</span>
+            <!-- PROJECT 3 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://dashboard-recon.superpari.co.id" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/recon.png" class="project-image"
+                    alt="Screenshot of PARI reconciliation dashboard" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Dashboard Recon PARI</h3>
+                  <p class="justify-text"
+                    data-en="Developed a financial reconciliation dashboard that automates transaction matching between bank statements and internal financial records. The system improves reconciliation accuracy, reduces manual effort, and accelerates transaction validation through real-time reporting."
+                    data-id="Mengembangkan dashboard rekonsiliasi keuangan yang mengotomatisasi proses pencocokan transaksi antara rekening koran bank dan data keuangan internal perusahaan. Sistem ini meningkatkan akurasi rekonsiliasi, mengurangi pekerjaan manual, serta mempercepat validasi transaksi melalui pelaporan secara real-time.">
+                    Developed a financial reconciliation dashboard that automates transaction matching between bank
+                    statements and internal financial records. The system improves reconciliation accuracy, reduces
+                    manual
+                    effort, and accelerates transaction validation through real-time reporting.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 4 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://dashboard-internal.superpari.co.id" target="_blank">
-                <img src="./assets/project/internal.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Dashboard Internal PARI</h3>
-                <p class="justify-text"
-                  data-en="Designed and developed an integrated internal dashboard to manage operational activities, including logistics monitoring, document management, reporting, and settlement processes. The platform centralizes business data to improve operational visibility and decision-making."
-                  data-id="Merancang dan mengembangkan dashboard internal terintegrasi untuk mengelola aktivitas operasional, termasuk monitoring logistik, manajemen dokumen, pelaporan, serta proses settlement. Platform ini memusatkan data bisnis sehingga meningkatkan visibilitas operasional dan mendukung pengambilan keputusan yang lebih efektif.">
-                  Designed and developed an integrated internal dashboard to manage operational activities, including
-                  logistics monitoring, document management, reporting, and settlement processes. The platform
-                  centralizes business data to improve operational visibility and decision-making.
-                </p>
-                <div class="tech-tags">
-                  <span>Laravel</span>
-                  <span>MySQL</span>
-                  <span>Redis</span>
-                  <span>Docker</span>
+            <!-- PROJECT 4 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://dashboard-internal.superpari.co.id" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/internal.png" class="project-image"
+                    alt="Screenshot of PARI internal dashboard" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Dashboard Internal PARI</h3>
+                  <p class="justify-text"
+                    data-en="Designed and developed an integrated internal dashboard to manage operational activities, including logistics monitoring, document management, reporting, and settlement processes. The platform centralizes business data to improve operational visibility and decision-making."
+                    data-id="Merancang dan mengembangkan dashboard internal terintegrasi untuk mengelola aktivitas operasional, termasuk monitoring logistik, manajemen dokumen, pelaporan, serta proses settlement. Platform ini memusatkan data bisnis sehingga meningkatkan visibilitas operasional dan mendukung pengambilan keputusan yang lebih efektif.">
+                    Designed and developed an integrated internal dashboard to manage operational activities, including
+                    logistics monitoring, document management, reporting, and settlement processes. The platform
+                    centralizes business data to improve operational visibility and decision-making.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 5 -->
-          <!-- <div class="carousel-item">
+            <!-- PROJECT 5 -->
+            <!-- <div class="carousel-item">
             <div class="project-card">
-              <a href="https://hasbelle.my.id" target="_blank">
-                <img src="./assets/project/hasbelle.png" class="project-image" />
+              <a href="https://hasbelle.my.id" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/project/hasbelle.png" class="project-image" alt="Screenshot of Hasbelle" loading="lazy" decoding="async" />
               </a>
               <div class="project-content">
                 <h3>Hasbelle</h3>
@@ -420,318 +516,389 @@
             </div>
           </div> -->
 
-          <!-- PROJECT 6 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://suryalogamuniversal.com" target="_blank">
-                <img src="./assets/project/suryalogamuniversal.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Surya Logam Universal</h3>
-                <p class="justify-text"
-                  data-en="Developed a corporate website and product catalog platform for Surya Logam Universal to strengthen the company's digital presence. The platform showcases products, company information, and customer inquiries through a responsive and user-friendly interface."
-                  data-id="Mengembangkan website perusahaan sekaligus platform katalog produk untuk Surya Logam Universal guna memperkuat kehadiran digital perusahaan. Platform ini menampilkan informasi perusahaan, katalog produk, serta mempermudah calon pelanggan dalam memperoleh informasi dan mengirimkan pertanyaan melalui antarmuka yang responsif.">
-                  Developed a corporate website and product catalog platform for Surya Logam Universal to strengthen the
-                  company's digital presence. The platform showcases products, company information, and customer
-                  inquiries through a responsive and user-friendly interface.
-                </p>
-                <div class="tech-tags">
-                  <span>Golang</span>
-                  <span>Next JS</span>
-                  <span>MySQL</span>
-                  <span>Redis</span>
-                  <span>MinIO</span>
-                  <span>Docker</span>
+            <!-- PROJECT 6 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://suryalogamuniversal.com" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/suryalogamuniversal.png" class="project-image"
+                    alt="Screenshot of Surya Logam Universal" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Surya Logam Universal</h3>
+                  <p class="justify-text"
+                    data-en="Developed a corporate website and product catalog platform for Surya Logam Universal to strengthen the company's digital presence. The platform showcases products, company information, and customer inquiries through a responsive and user-friendly interface."
+                    data-id="Mengembangkan website perusahaan sekaligus platform katalog produk untuk Surya Logam Universal guna memperkuat kehadiran digital perusahaan. Platform ini menampilkan informasi perusahaan, katalog produk, serta mempermudah calon pelanggan dalam memperoleh informasi dan mengirimkan pertanyaan melalui antarmuka yang responsif.">
+                    Developed a corporate website and product catalog platform for Surya Logam Universal to strengthen
+                    the
+                    company's digital presence. The platform showcases products, company information, and customer
+                    inquiries through a responsive and user-friendly interface.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Golang</span>
+                    <span>Next JS</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>MinIO</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 7 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://aluminiumprofilindo.com/" target="_blank">
-                <img src="./assets/project/aluminiumprofilindo.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Aluminium Profil Indo</h3>
-                <p class="justify-text"
-                  data-en="Designed and developed a modern company website for Aluminium Profil Indo featuring product catalogs, company profiles, and business information. The platform improves brand credibility, enhances product visibility, and provides customers with easy access to product specifications."
-                  data-id="Merancang dan mengembangkan website perusahaan modern untuk Aluminium Profil Indo yang menampilkan katalog produk, profil perusahaan, serta informasi bisnis. Platform ini meningkatkan kredibilitas perusahaan, memperluas visibilitas produk, dan memudahkan pelanggan dalam mengakses spesifikasi produk.">
-                  Designed and developed a modern company website for Aluminium Profil Indo featuring product catalogs,
-                  company profiles, and business information. The platform improves brand credibility, enhances product
-                  visibility, and provides customers with easy access to product specifications.
-                </p>
-                <div class="tech-tags">
-                  <span>Golang</span>
-                  <span>Next JS</span>
-                  <span>MySQL</span>
-                  <span>Redis</span>
-                  <span>MinIO</span>
-                  <span>Docker</span>
+            <!-- PROJECT 7 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://aluminiumprofilindo.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/aluminiumprofilindo.png" class="project-image"
+                    alt="Screenshot of Aluminium Profil Indo" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Aluminium Profil Indo</h3>
+                  <p class="justify-text"
+                    data-en="Designed and developed a modern company website for Aluminium Profil Indo featuring product catalogs, company profiles, and business information. The platform improves brand credibility, enhances product visibility, and provides customers with easy access to product specifications."
+                    data-id="Merancang dan mengembangkan website perusahaan modern untuk Aluminium Profil Indo yang menampilkan katalog produk, profil perusahaan, serta informasi bisnis. Platform ini meningkatkan kredibilitas perusahaan, memperluas visibilitas produk, dan memudahkan pelanggan dalam mengakses spesifikasi produk.">
+                    Designed and developed a modern company website for Aluminium Profil Indo featuring product
+                    catalogs,
+                    company profiles, and business information. The platform improves brand credibility, enhances
+                    product
+                    visibility, and provides customers with easy access to product specifications.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Golang</span>
+                    <span>Next JS</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>MinIO</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 6 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://pipatubing.co.id/" target="_blank">
-                <img src="./assets/project/pipatubing.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Pipa Tubing</h3>
-                <p class="justify-text"
-                  data-en="Developed a responsive business website for Pipa Tubing to showcase industrial products and company services. The platform provides an organized product catalog, detailed specifications, and an optimized user experience to support digital marketing and customer engagement."
-                  data-id="Mengembangkan website bisnis yang responsif untuk Pipa Tubing guna menampilkan produk industri dan layanan perusahaan. Platform ini menyediakan katalog produk yang terstruktur, spesifikasi produk yang lengkap, serta pengalaman pengguna yang optimal untuk mendukung pemasaran digital dan interaksi dengan pelanggan.">
-                  Developed a responsive business website for Pipa Tubing to showcase industrial products and company
-                  services. The platform provides an organized product catalog, detailed specifications, and an
-                  optimized user experience to support digital marketing and customer engagement.
-                </p>
-                <div class="tech-tags">
-                  <span>Golang</span>
-                  <span>Next JS</span>
-                  <span>MySQL</span>
-                  <span>Redis</span>
-                  <span>MinIO</span>
-                  <span>Docker</span>
+            <!-- PROJECT 6 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://pipatubing.co.id/" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/pipatubing.png" class="project-image" alt="Screenshot of Pipa Tubing"
+                    loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Pipa Tubing</h3>
+                  <p class="justify-text"
+                    data-en="Developed a responsive business website for Pipa Tubing to showcase industrial products and company services. The platform provides an organized product catalog, detailed specifications, and an optimized user experience to support digital marketing and customer engagement."
+                    data-id="Mengembangkan website bisnis yang responsif untuk Pipa Tubing guna menampilkan produk industri dan layanan perusahaan. Platform ini menyediakan katalog produk yang terstruktur, spesifikasi produk yang lengkap, serta pengalaman pengguna yang optimal untuk mendukung pemasaran digital dan interaksi dengan pelanggan.">
+                    Developed a responsive business website for Pipa Tubing to showcase industrial products and company
+                    services. The platform provides an organized product catalog, detailed specifications, and an
+                    optimized user experience to support digital marketing and customer engagement.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Golang</span>
+                    <span>Next JS</span>
+                    <span>MySQL</span>
+                    <span>Redis</span>
+                    <span>MinIO</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 7 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="http://34.101.148.48:3000/login" target="_blank">
-                <img src="./assets/project/rAIgine.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>rAIgine MRP</h3>
-                <p class="justify-text"
-                  data-en="Developed a web-based Manufacturing Resource Planning (MRP) system to streamline production planning, inventory management, bill of materials (BOM), and manufacturing workflows. The platform improves operational efficiency, enhances production visibility, and supports data-driven decision making through an integrated dashboard."
-                  data-id="Mengembangkan sistem Manufacturing Resource Planning (MRP) berbasis web untuk mengoptimalkan perencanaan produksi, manajemen persediaan, Bill of Materials (BOM), dan alur kerja manufaktur. Platform ini meningkatkan efisiensi operasional, memberikan visibilitas proses produksi secara menyeluruh, serta mendukung pengambilan keputusan berbasis data melalui dashboard yang terintegrasi.">
-                  Developed a web-based Manufacturing Resource Planning (MRP) system to streamline production planning,
-                  inventory management, bill of materials (BOM), and manufacturing workflows. The platform improves
-                  operational efficiency, enhances production visibility, and supports data-driven decision making
-                  through an integrated dashboard.
-                </p>
-                <div class="tech-tags">
-                  <span>Golang</span>
-                  <span>Next JS</span>
-                  <span>MySQL</span>
-                  <span>Docker</span>
+            <!-- PROJECT 7 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="http://34.101.148.48:3000/login" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/rAIgine.png" class="project-image" alt="Screenshot of rAIgine MRP"
+                    loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>rAIgine MRP</h3>
+                  <p class="justify-text"
+                    data-en="Developed a web-based Manufacturing Resource Planning (MRP) system to streamline production planning, inventory management, bill of materials (BOM), and manufacturing workflows. The platform improves operational efficiency, enhances production visibility, and supports data-driven decision making through an integrated dashboard."
+                    data-id="Mengembangkan sistem Manufacturing Resource Planning (MRP) berbasis web untuk mengoptimalkan perencanaan produksi, manajemen persediaan, Bill of Materials (BOM), dan alur kerja manufaktur. Platform ini meningkatkan efisiensi operasional, memberikan visibilitas proses produksi secara menyeluruh, serta mendukung pengambilan keputusan berbasis data melalui dashboard yang terintegrasi.">
+                    Developed a web-based Manufacturing Resource Planning (MRP) system to streamline production
+                    planning,
+                    inventory management, bill of materials (BOM), and manufacturing workflows. The platform improves
+                    operational efficiency, enhances production visibility, and supports data-driven decision making
+                    through an integrated dashboard.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Golang</span>
+                    <span>Next JS</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 8 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://www.sunarisaspeakingschool.com" target="_blank">
-                <img src="./assets/project/sunarisaspeakingschool.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Sunarisa Speaking School</h3>
-                <p class="justify-text"
-                  data-en="Developed a web-based learning platform for Sunarisa Speaking School with Midtrans Payment Gateway integration. Implemented secure payment processing, transaction validation, webhook handling, invoice generation, and automated payment status updates to streamline student registration and payment management."
-                  data-id="Mengembangkan platform pembelajaran berbasis web untuk Sunarisa Speaking School yang terintegrasi dengan Midtrans Payment Gateway. Mengimplementasikan proses pembayaran yang aman, validasi transaksi, webhook pembayaran, pembuatan invoice, serta pembaruan status pembayaran secara otomatis untuk menyederhanakan proses pendaftaran dan pengelolaan pembayaran siswa.">
-                  Developed a web-based learning platform for Sunarisa Speaking School with Midtrans Payment Gateway
-                  integration. Implemented secure payment processing, transaction validation, webhook handling, invoice
-                  generation, and automated payment status updates to streamline student registration and payment
-                  management.
-                </p>
-                <div class="tech-tags">
-                  <span>Laravel</span>
-                  <span>Midtrans</span>
-                  <span>MySQL</span>
-                  <span>Docker</span>
+            <!-- PROJECT 8 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://mamafuji.co.id/" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/mamafuji.png" class="project-image" alt="Screenshot of Mamafuji"
+                    loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Mamafuji</h3>
+                  <p class="justify-text"
+                    data-en="Developed an integrated e-commerce platform and sales management dashboard to streamline online sales and business operations. The platform features product catalog management, order processing, inventory management, online payment integration, promotional content management, and sales monitoring through a centralized administrative dashboard."
+                    data-id="Mengembangkan platform e-commerce dan dashboard manajemen penjualan yang terintegrasi untuk mengoptimalkan penjualan online dan operasional bisnis. Platform ini mencakup pengelolaan katalog produk, pemrosesan pesanan, manajemen persediaan, integrasi pembayaran online, pengelolaan konten promosi, serta pemantauan penjualan melalui dashboard administrasi terpusat.">
+                    Developed an integrated e-commerce platform and sales
+                    management dashboard to streamline online sales and
+                    business operations. The platform features product
+                    catalog management, order processing, inventory
+                    management, online payment integration, promotional
+                    content management, and sales monitoring through
+                    a centralized administrative dashboard.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Golang</span>
+                    <span>Next.js</span>
+                    <span>PostgreSQL</span>
+                    <span>Redis</span>
+                    <span>MinIO</span>
+                    <span>Midtrans</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 9 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://etwpad-stg.bitcorp.id/login" target="_blank">
-                <img src="./assets/project/etwpad.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>ETWPAD</h3>
-                <p class="justify-text"
-                  data-en="Contributed to the development of ETWPAD by integrating BRI API Payment Gateway for secure digital payment services. Built backend payment workflows, transaction verification, callback processing, and automated payment status updates to support reliable and efficient financial operations."
-                  data-id="Berkontribusi dalam pengembangan ETWPAD dengan mengintegrasikan BRI API Payment Gateway untuk mendukung layanan pembayaran digital yang aman. Membangun alur pembayaran di sisi backend, verifikasi transaksi, pemrosesan callback, serta pembaruan status pembayaran secara otomatis guna mendukung operasional keuangan yang andal dan efisien.">
-                  Contributed to the development of ETWPAD by integrating BRI API Payment Gateway for secure digital
-                  payment services. Built backend payment workflows, transaction verification, callback processing, and
-                  automated payment status updates to support reliable and efficient financial operations.
-                </p>
-                <div class="tech-tags">
-                  <span>Golang</span>
-                  <span>BRIapi</span>
-                  <span>Docker</span>
+            <!-- PROJECT 9 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://www.sunarisaspeakingschool.com" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/sunarisaspeakingschool.png" class="project-image"
+                    alt="Screenshot of Sunarisa Speaking School" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Sunarisa Speaking School</h3>
+                  <p class="justify-text"
+                    data-en="Developed a web-based learning platform for Sunarisa Speaking School with Midtrans Payment Gateway integration. Implemented secure payment processing, transaction validation, webhook handling, invoice generation, and automated payment status updates to streamline student registration and payment management."
+                    data-id="Mengembangkan platform pembelajaran berbasis web untuk Sunarisa Speaking School yang terintegrasi dengan Midtrans Payment Gateway. Mengimplementasikan proses pembayaran yang aman, validasi transaksi, webhook pembayaran, pembuatan invoice, serta pembaruan status pembayaran secara otomatis untuk menyederhanakan proses pendaftaran dan pengelolaan pembayaran siswa.">
+                    Developed a web-based learning platform for Sunarisa Speaking School with Midtrans Payment Gateway
+                    integration. Implemented secure payment processing, transaction validation, webhook handling,
+                    invoice
+                    generation, and automated payment status updates to streamline student registration and payment
+                    management.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Laravel</span>
+                    <span>Midtrans</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- PROJECT 10 -->
-          <div class="carousel-item">
-            <div class="project-card">
-              <a href="https://www.mekarlanggengperkasa.com" target="_blank">
-                <img src="./assets/project/mekarlanggeng.png" class="project-image" />
-              </a>
-              <div class="project-content">
-                <h3>Mekar Langgeng Perkasa</h3>
-                <p class="justify-text"
-                  data-en="Developed a responsive corporate landing page for Mekar Langgeng Perkasa to strengthen the company's online presence. The website showcases the company's profile, services, and business information with a modern, user-friendly, and mobile-responsive design."
-                  data-id="Mengembangkan website landing page perusahaan untuk Mekar Langgeng Perkasa guna memperkuat kehadiran digital perusahaan. Website ini menampilkan profil perusahaan, layanan, serta informasi bisnis dengan desain yang modern, mudah digunakan, dan responsif di berbagai perangkat.">
-                  Developed a responsive corporate landing page for Mekar Langgeng Perkasa to strengthen the company's
-                  online presence.
-                  The website showcases the company's profile, services, and business information with a modern,
-                  user-friendly, and
-                  mobile-responsive design.
-                </p>
-                <div class="tech-tags">
-                  <span>Codeigniter</span>
-                  <span>MySQL</span>
+            <!-- PROJECT 10 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://etwpad-stg.bitcorp.id/login" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/etwpad.png" class="project-image" alt="Screenshot of ETWPAD" loading="lazy"
+                    decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>ETWPAD</h3>
+                  <p class="justify-text"
+                    data-en="Contributed to the development of ETWPAD by integrating BRI API Payment Gateway for secure digital payment services. Built backend payment workflows, transaction verification, callback processing, and automated payment status updates to support reliable and efficient financial operations."
+                    data-id="Berkontribusi dalam pengembangan ETWPAD dengan mengintegrasikan BRI API Payment Gateway untuk mendukung layanan pembayaran digital yang aman. Membangun alur pembayaran di sisi backend, verifikasi transaksi, pemrosesan callback, serta pembaruan status pembayaran secara otomatis guna mendukung operasional keuangan yang andal dan efisien.">
+                    Contributed to the development of ETWPAD by integrating BRI API Payment Gateway for secure digital
+                    payment services. Built backend payment workflows, transaction verification, callback processing,
+                    and
+                    automated payment status updates to support reliable and efficient financial operations.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Golang</span>
+                    <span>BRIapi</span>
+                    <span>Docker</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
+            <!-- PROJECT 11 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://www.mekarlanggengperkasa.com" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/mekarlanggeng.png" class="project-image"
+                    alt="Screenshot of Mekar Langgeng Perkasa" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Mekar Langgeng Perkasa</h3>
+                  <p class="justify-text"
+                    data-en="Developed a responsive corporate landing page for Mekar Langgeng Perkasa to strengthen the company's online presence. The website showcases the company's profile, services, and business information with a modern, user-friendly, and mobile-responsive design."
+                    data-id="Mengembangkan website landing page perusahaan untuk Mekar Langgeng Perkasa guna memperkuat kehadiran digital perusahaan. Website ini menampilkan profil perusahaan, layanan, serta informasi bisnis dengan desain yang modern, mudah digunakan, dan responsif di berbagai perangkat.">
+                    Developed a responsive corporate landing page for Mekar Langgeng Perkasa to strengthen the company's
+                    online presence.
+                    The website showcases the company's profile, services, and business information with a modern,
+                    user-friendly, and
+                    mobile-responsive design.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Codeigniter</span>
+                    <span>MySQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 12 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="http://43.134.137.203:8000/checkout" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/monolith-picture.png" class="project-image"
+                    alt="Screenshot of Luminash Picture" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Luminash Picture</h3>
+                  <p class="justify-text"
+                    data-en="A web-based photobooth application designed to deliver an interactive and seamless photography experience. The application integrates camera connectivity, real-time photo capture, customizable photo templates, and digital photo management into a unified platform."
+                    data-id="Aplikasi photobooth berbasis web yang dirancang untuk memberikan pengalaman fotografi yang interaktif dan praktis. Aplikasi ini mengintegrasikan konektivitas kamera, pengambilan foto secara real-time, kustomisasi template foto, serta pengelolaan foto digital dalam satu platform.">
+                    A web-based photobooth application designed to deliver
+                    an interactive and seamless photography experience.
+                    The application integrates camera connectivity,
+                    real-time photo capture, customizable photo templates,
+                    and digital photo management into a unified platform.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>MinIO</span>
+                    <span>Midtrans</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 13 -->
+            <div class="carousel-item">
+              <div class="project-card">
+                <a href="https://cucisofalaris.com" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/project/cucisofalaris.png" class="project-image"
+                    alt="Screenshot of Cuci Sofa Laris" loading="lazy" decoding="async" />
+                </a>
+                <div class="project-content">
+                  <h3>Cuci Sofa Laris</h3>
+                  <p class="justify-text"
+                    data-en="Developed an integrated landing page and operational management dashboard for a professional cleaning service business. The platform streamlines customer order management, service scheduling, staff assignments, invoicing, operational monitoring, and performance tracking through a centralized administrative dashboard."
+                    data-id="Mengembangkan landing page dan dashboard manajemen operasional yang terintegrasi untuk bisnis jasa pencucian profesional. Platform ini mengoptimalkan pengelolaan pesanan pelanggan, penjadwalan layanan, penugasan petugas, pengelolaan invoice, monitoring operasional, serta pemantauan kinerja melalui dashboard administrasi terpusat.">
+                    Developed an integrated landing page and operational
+                    management dashboard for a professional cleaning service
+                    business. The platform streamlines customer order
+                    management, service scheduling, staff assignments,
+                    invoicing, operational monitoring, and performance
+                    tracking through a centralized administrative dashboard.
+                  </p>
+                  <div class="tech-tags">
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                    <span>Flutter</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next projects">›</button>
         </div>
-        <button class="carousel-btn next">›</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="certificates">
-    <div class="container">
-      <h2 data-en="Certificates" data-id="Sertifikat">
-        Certificates
-      </h2>
-      <div class="certificate-grid">
-
-        <a class="certificate-card" href="./assets/certificate/BNSP.pdf" target="_blank" rel="noopener noreferrer">
-          <iframe src="./assets/certificate/BNSP.pdf#toolbar=0&navpanes=0&scrollbar=0">
-          </iframe>
-          <div class="certificate-info">
-            <h4>
-              <p class="justify-text" data-en="Software Development" data-id="Pengembang Perangkat Lunak">
-                Software Development
-              </p>
-            </h4>
-            <span>BNSP</span>
+    <section id="certificates" class="credentials-section">
+      <div class="container">
+        <div class="credentials-heading">
+          <div>
+            <p class="section-kicker" data-en="EXTRA CONTEXT" data-id="BUKTI PENDUKUNG">EXTRA CONTEXT</p>
+            <h2 data-en="Selected credentials." data-id="Sertifikasi pilihan.">Selected credentials.</h2>
           </div>
-        </a>
-
-        <a class="certificate-card" href="./assets/certificate/Agentic AI Automation Engineer.pdf" target="_blank"
-          rel="noopener noreferrer">
-          <iframe src="./assets/certificate/Agentic AI Automation Engineer.pdf#toolbar=0&navpanes=0&scrollbar=0">
-          </iframe>
-          <div class="certificate-info">
-            <h4>Agentic AI Automation Engineer</h4>
-            <span>Hacktiv8</span>
+          <p data-en="Projects and experience tell the main story. These selected credentials add context."
+            data-id="Proyek dan pengalaman adalah cerita utama. Sertifikasi pilihan ini menjadi bukti pendukung.">
+            Projects and experience tell the main story. These selected credentials add context.</p>
+        </div>
+        <div class="credential-list">
+          <a class="credential-item" href="./assets/certificate/BNSP.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="credential-icon" aria-hidden="true">✓</span><span><strong data-en="Software Development"
+                data-id="Pengembang Perangkat Lunak">Software Development</strong><small>BNSP · Professional
+                certification</small></span><span class="credential-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="credential-item" href="./assets/certificate/Agentic AI Automation Engineer.pdf" target="_blank"
+            rel="noopener noreferrer">
+            <span class="credential-icon" aria-hidden="true">✳</span><span><strong>Agentic AI Automation
+                Engineer</strong><small>Hacktiv8 · Engineering</small></span><span class="credential-arrow"
+              aria-hidden="true">↗</span>
+          </a>
+          <a class="credential-item"
+            href="./assets/certificate/Chatbot Berbasis RAG dengan Next.js, n8n & PostgreSQL.pdf" target="_blank"
+            rel="noopener noreferrer">
+            <span class="credential-icon" aria-hidden="true">⌘</span><span><strong
+                data-en="RAG Chatbot with Next.js, n8n & PostgreSQL"
+                data-id="Chatbot RAG dengan Next.js, n8n & PostgreSQL">RAG Chatbot with Next.js, n8n &
+                PostgreSQL</strong><small>Inercorp · Applied AI</small></span><span class="credential-arrow"
+              aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <details class="more-credentials">
+          <summary data-en="See other certificates" data-id="Lihat sertifikat lainnya">See other certificates</summary>
+          <div class="more-credential-links">
+            <a href="./assets/certificate/Project Management.pdf" target="_blank" rel="noopener noreferrer">Project
+              Management · Hacktiv8</a>
+            <a href="./assets/certificate/Dasar Penetration Testing.pdf" target="_blank" rel="noopener noreferrer">Dasar
+              Penetration Testing · Hacktiv8</a>
+            <a href="./assets/certificate/Sertifikat Flutter Basic.pdf" target="_blank"
+              rel="noopener noreferrer">Flutter Basic · WebHozz</a>
+            <a href="./assets/certificate/Sertifikat Flutter Advance.pdf" target="_blank"
+              rel="noopener noreferrer">Flutter Advance · WebHozz</a>
+            <a href="./assets/certificate/Vibecoding Golang with Antigravity.pdf" target="_blank"
+              rel="noopener noreferrer">Golang with Antigravity · Inercorp</a>
+            <a href="./assets/certificate/Build AI with Hermes.pdf" target="_blank" rel="noopener noreferrer">Build AI
+              with Hermes · Inercorp</a>
           </div>
-        </a>
-
-        <a class="certificate-card" href="./assets/certificate/Dasar Penetration Testing.pdf" target="_blank">
-          <iframe src="./assets/certificate/Dasar Penetration Testing.pdf#toolbar=0&navpanes=0"></iframe>
-          <div class="certificate-info">
-            <h4>Dasar Penetration Testing</h4>
-            <span>Hacktiv8</span>
-          </div>
-        </a>
-
-        <a class="certificate-card" href="./assets/certificate/Project Management.pdf" target="_blank">
-          <iframe src="./assets/certificate/Project Management.pdf#toolbar=0&navpanes=0"></iframe>
-          <div class="certificate-info">
-            <h4>Project Management</h4>
-            <span>Hacktiv8</span>
-          </div>
-        </a>
-
-        <a class="certificate-card" href="./assets/certificate/Sertifikat Flutter Basic.pdf" target="_blank">
-          <iframe src="./assets/certificate/Sertifikat Flutter Basic.pdf#toolbar=0&navpanes=0"></iframe>
-          <div class="certificate-info">
-            <h4>Flutter Basic</h4>
-            <span>WebHozz</span>
-          </div>
-        </a>
-
-        <a class="certificate-card" href="./assets/certificate/Sertifikat Flutter Advance.pdf" target="_blank">
-          <iframe src="./assets/certificate/Sertifikat Flutter Advance.pdf#toolbar=0&navpanes=0"></iframe>
-          <div class="certificate-info">
-            <h4>Flutter Advance</h4>
-            <span>WebHozz</span>
-          </div>
-        </a>
-
-        <a class="certificate-card"
-          href="./assets/certificate/Chatbot Berbasis RAG dengan Next.js, n8n & PostgreSQL.pdf" target="_blank">
-          <iframe
-            src="./assets/certificate/Chatbot Berbasis RAG dengan Next.js, n8n & PostgreSQL.pdf#toolbar=0&navpanes=0"></iframe>
-          <div class="certificate-info">
-            <h4>Chatbot Berbasis RAG</h4>
-            <span>Inercorp</span>
-          </div>
-        </a>
-
-        <a class="certificate-card" href="./assets/certificate/Vibecoding Golang with Antigravity.pdf" target="_blank">
-          <iframe src="./assets/certificate/Vibecoding Golang with Antigravity.pdf#toolbar=0&navpanes=0"></iframe>
-          <div class="certificate-info">
-            <h4>Golang with Antigravity</h4>
-            <span>Inercorp</span>
-          </div>
-        </a>
-
-        <a class="certificate-card" href="./assets/certificate/Build AI with Hermes.pdf" target="_blank">
-          <iframe src="./assets/certificate/Build AI with Hermes.pdf#toolbar=0&navpanes=0"></iframe>
-          <div class="certificate-info">
-            <h4>Build AI with Hermes</h4>
-            <span>Inercorp</span>
-          </div>
-        </a>
-
-
+        </details>
       </div>
-    </div>
-
-  </section>
+    </section>
 
 
 
+  </main>
   <footer>
+    <div class="footer-heading">
+      <p class="section-kicker" data-en="LET'S BUILD SOMETHING USEFUL" data-id="MARI BANGUN SESUATU YANG BERGUNA">LET'S
+        BUILD SOMETHING USEFUL</p>
+      <h2 data-en="Have a project in mind?" data-id="Ada proyek yang ingin dikembangkan?">Have a project in mind?</h2>
+      <a href="mailto:hasan.tecnic@gmail.com">hasan.tecnic@gmail.com <span aria-hidden="true">↗</span></a>
+    </div>
     <div class="socials">
-      <a href="https://github.com/HasanFdlh" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/HasanFdlh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
         <span class="tooltip">GitHub</span>
       </a>
 
-      <a href="https://gitlab.com/hasan.tecnic" target="_blank" aria-label="GitLab">
+      <a href="https://gitlab.com/hasan.tecnic" target="_blank" rel="noopener noreferrer" aria-label="GitLab">
         <img src="https://cdn.simpleicons.org/gitlab/FC6D26" alt="GitLab">
         <span class="tooltip">GitLab</span>
       </a>
 
-      <a href="https://www.linkedin.com/in/hasanfadlh" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/hasanfadlh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
         <span class="tooltip">LinkedIn</span>
       </a>
 
-      <a href="https://www.instagram.com/hasan.kiting" target="_blank" aria-label="Instagram">
+      <a href="https://www.instagram.com/hasan.kiting" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
         <span class="tooltip">Instagram</span>
       </a>
 
-      <a href="https://wa.me/6281284522735" target="_blank" aria-label="WhatsApp">
+      <a href="https://wa.me/6281284522735" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
         <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp">
         <span class="tooltip">WhatsApp</span>
       </a>
 
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hasan.tecnic@gmail.com" target="_blank" aria-label="Email">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hasan.tecnic@gmail.com" target="_blank"
+        rel="noopener noreferrer" aria-label="Email">
         <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email">
         <span class="tooltip">Email</span>
       </a>
@@ -742,64 +909,70 @@
       © 2026 Hasan Fadillah. All Rights Reserved.
     </p>
   </footer>
-</body>
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("nav-menu");
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-  });
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
 
-  let currentLang = "en";
-  const langBtn = document.getElementById("lang-toggle");
-  langBtn.addEventListener("click", () => {
-    currentLang = currentLang === "en" ? "id" : "en";
-    langBtn.innerText = currentLang === "en" ? "ID" : "EN";
-    document.querySelectorAll("[data-en]").forEach(el => {
-      el.innerText = el.getAttribute(`data-${currentLang}`);
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navMenu.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
     });
-  });
-</script>
-<script>
-  const track = document.getElementById("carouselTrack");
-  const items = document.querySelectorAll(".carousel-item");
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
 
-  let index = 0;
+    navMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
 
-  function getItemWidth() {
-    return items[0].offsetWidth + 20; // width + gap
-  }
+    let currentLang = "en";
+    const langButton = document.getElementById("lang-toggle");
+    const cvLink = document.getElementById("cv-link");
+    langButton.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "id" : "en";
+      document.documentElement.lang = currentLang;
+      langButton.textContent = currentLang === "en" ? "ID" : "EN";
+      langButton.setAttribute("aria-label", currentLang === "en" ? "Switch language to Indonesian" : "Switch language to English");
+      cvLink.href = currentLang === "id"
+        ? "./assets/CV Hasan Fadillah ID.pdf"
+        : "./assets/CV Hasan Fadillah EN.pdf";
 
-  function updateCarousel() {
-    const width = getItemWidth();
-    track.style.transform = `translateX(-${index * width}px)`;
-  }
+      document.querySelectorAll("[data-en]").forEach((element) => {
+        const translation = element.getAttribute(`data-${currentLang}`);
+        if (translation) element.textContent = translation;
+      });
+    });
 
-  // NEXT
-  next.addEventListener("click", () => {
-    index++;
-    if (index >= items.length) index = 0;
-    updateCarousel();
-  });
+    const carouselTrack = document.getElementById("carouselTrack");
+    const projectCards = carouselTrack.querySelectorAll(".carousel-item");
+    const previousButton = document.querySelector(".carousel-btn.prev");
+    const nextButton = document.querySelector(".carousel-btn.next");
 
-  // PREV
-  prev.addEventListener("click", () => {
-    index--;
-    if (index < 0) index = items.length - 1;
-    updateCarousel();
-  });
+    function updateCarouselButtons() {
+      const maxScroll = carouselTrack.scrollWidth - carouselTrack.clientWidth;
+      previousButton.disabled = carouselTrack.scrollLeft <= 2;
+      nextButton.disabled = carouselTrack.scrollLeft >= maxScroll - 2;
+    }
 
-  // AUTO SLIDE (10 detik)
-  setInterval(() => {
-    index++;
-    if (index >= items.length) index = 0;
-    updateCarousel();
-  }, 15000);
+    function moveCarousel(direction) {
+      if (!projectCards.length) return;
+      const cardWidth = projectCards[0].getBoundingClientRect().width;
+      const gap = parseFloat(getComputedStyle(carouselTrack).columnGap) || 0;
+      carouselTrack.scrollBy({ left: direction * (cardWidth + gap), behavior: "smooth" });
+    }
 
-  // FIX resize biar gak geser aneh
-  window.addEventListener("resize", updateCarousel);
-</script>
+    previousButton.addEventListener("click", () => moveCarousel(-1));
+    nextButton.addEventListener("click", () => moveCarousel(1));
+    carouselTrack.addEventListener("scroll", updateCarouselButtons, { passive: true });
+    window.addEventListener("resize", updateCarouselButtons);
+    updateCarouselButtons();
+
+    window.addEventListener("scroll", () => {
+      document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 12);
+    }, { passive: true });
+  </script>
+</body>
 
 </html>
